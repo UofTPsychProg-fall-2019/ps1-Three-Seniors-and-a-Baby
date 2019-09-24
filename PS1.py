@@ -18,7 +18,7 @@ print(adult1)
 
 # second group member's error to fix
 a = [1, 3, 'a']
-coder2 = a[3]
+coder2 = a[2]
 
 # now the second group member should define a variable with an error
 # and then commit and push changes to GitHub
