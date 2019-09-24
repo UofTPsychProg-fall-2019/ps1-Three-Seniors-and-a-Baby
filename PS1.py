@@ -18,10 +18,13 @@ print(adult1)
 
 # second group member's error to fix
 a = [1, 3, 'a']
-coder2 = a[2]
+baby1 = a[2]
 
 # now the second group member should define a variable with an error
 # and then commit and push changes to GitHub
+spider = 1.0
+bite = 'ouch'
+spiderman = spider+str(bite)
 coder3 =
 
 # etc. until all group members have fixed and made 1 error
