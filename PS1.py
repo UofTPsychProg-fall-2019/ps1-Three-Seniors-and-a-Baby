@@ -24,9 +24,16 @@ baby1 = a[2]
 # and then commit and push changes to GitHub
 spider = 1.0
 bite = 'ouch'
-spiderman = spider+str(bite)
-coder3 =
+coder3 = str(spider)+str(bite)
 
+
+# Fourth group member's error to fix
+for i in [1,2,-3,4,-5]:
+    if i > 0:
+        print('positive')
+    else
+        print('negative')
+coder4=
 # etc. until all group members have fixed and made 1 error
 
 
