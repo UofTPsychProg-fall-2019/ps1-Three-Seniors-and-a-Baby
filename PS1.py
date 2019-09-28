@@ -31,9 +31,10 @@ coder3 = str(spider)+str(bite)
 for i in [1,2,-3,4,-5]:
     if i > 0:
         print('positive')
-    else
+    else:
         print('negative')
-coder4=
+coder4= print(I)
+
 # etc. until all group members have fixed and made 1 error
 
 
