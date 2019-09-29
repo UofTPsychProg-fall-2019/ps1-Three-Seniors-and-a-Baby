@@ -45,24 +45,29 @@ rt = [400, 450, 500, 440, -1, 410, 570]
 
 # the -1 indicates missing data. Your job is to remove it
 # use the index method to find the missing value 
-missing_rt =
+missing_rt = rt.index(-1)
 
 # and then use missing_rt to remove the trial from rt
-clean_rt =
-
+del rt[missing_rt]
+clean_rt = rt
 
 # now you have data with more than one missing value
 rt_trouble = [400, 450, 500, 440, -1, 410, 570, -1, 400]
 
 # try the same procedure. Does it work? 
 # use a comment to explain why or why not below in comments
-
+missing_rts = rt_trouble.index(-1)
+# this only indexes and removes the first missing value
 
 
 # now write an if statement that you can use to remove the frist missing value 
 # only when there is a missing value (-1) in a list 
 # this statement should always generate a clean_rt list; if there's no missing
-# data clean_rt is set to the original rt list.   
+# data clean_rt is set to the original rt list.
+clean_rt = rt_trouble
+while -1 in clean_rt:
+    missing_rt = rt_trouble.index(-1)
+    del(rt_trouble[missing_rt])
 
 
 
@@ -78,4 +83,7 @@ data = [rt_new, trial_num, accuracy]
 # and remove it from all sublists in data 
 # be sure to only work with the master data list, to practice indexing 
 # lists of lists
+missing_rt = data[0].index(-1)
 
+for j in data:
+    del j[missing_rt]
