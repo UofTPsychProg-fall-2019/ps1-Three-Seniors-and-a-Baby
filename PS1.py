@@ -4,6 +4,11 @@
 Problem Set 1
 @author: katherineduncan
 """
+#Students:
+#Nichole Bouffard
+#Corey Loo
+#Nick Hoang
+#Ariana Giuliano
 
 #%% Part 1: pass the error forward ____________________________________________
 # this should be completed one at a time to get practice using GitHub
@@ -45,10 +50,11 @@ rt = [400, 450, 500, 440, -1, 410, 570]
 
 # the -1 indicates missing data. Your job is to remove it
 # use the index method to find the missing value 
-missing_rt =
+missing_rt = rt.index(-1)
 
-# and then use missing_rt to remove the trial from rt
-clean_rt =
+# and then use missing_rt to remove the trial from rt 
+del(rt[missing_rt])
+clean_rt = rt
 
 
 # now you have data with more than one missing value
@@ -57,14 +63,24 @@ rt_trouble = [400, 450, 500, 440, -1, 410, 570, -1, 400]
 # try the same procedure. Does it work? 
 # use a comment to explain why or why not below in comments
 
+# Coder 3: No because you've indexed only the first -1, need to use a different method 
+# That is more generalizable to capture all missing values of -1
 
 
 # now write an if statement that you can use to remove the frist missing value 
 # only when there is a missing value (-1) in a list 
 # this statement should always generate a clean_rt list; if there's no missing
-# data clean_rt is set to the original rt list.   
-
-
+# data clean_rt is set to the original rt list. 
+rt=rt_trouble  
+if -1 in rt:
+    if x in rt < 0:
+        del(rt[x])
+        clean_rt=rt
+    else:
+        print('missing values removed')
+else:
+    clean_rt=rt
+    
 
 # for the last section, you will work with a list of lists:
 rt_new = [400, 450, 500, 440, -1, 410, 570]
@@ -78,4 +94,17 @@ data = [rt_new, trial_num, accuracy]
 # and remove it from all sublists in data 
 # be sure to only work with the master data list, to practice indexing 
 # lists of lists
+if -1 in data[0]:
+    if x in data[0] < 0:
+        missing = data[0].index(-1)
+        del(data[0][missing])
+        del(data[1][missing])
+        del(data[2][missing])
+        clean_data=data
+    else:
+        print('missing values removed')
+else:
+    clean_data=data
+
+
 
