@@ -93,3 +93,5 @@ while -1 in data[0]:
     missing_rt = data[0].index(-1)
     for j in data:
         del j[missing_rt]
+        
+#final submission
