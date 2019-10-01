@@ -73,8 +73,8 @@ missing_rts = rt_trouble.index(-1)
 # The question asks to use an if statement
 clean_rt = rt_trouble
 while -1 in clean_rt:
-   missing_rt = rt_trouble.index(-1)
-   del(rt_trouble[missing_rt])
+   missing_rt = clean_rt.index(-1)
+   del(clean_rt[missing_rt])
     
 # for the last section, you will work with a list of lists:
 rt_new = [400, 450, 500, 440, -1, 410, 570]
@@ -92,6 +92,6 @@ data = [rt_new, trial_num, accuracy]
 while -1 in data[0]:    
     missing_rt = data[0].index(-1)
     for j in data:
-        del j[missing_rt]
+        del data[j][missing_rt]
         
 #final submission
