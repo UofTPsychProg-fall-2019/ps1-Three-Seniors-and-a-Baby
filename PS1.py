@@ -33,7 +33,7 @@ for i in [1,2,-3,4,-5]:
         print('positive')
     else:
         print('negative')
-coder4= print(I)
+coder4= print(i)
 
 # etc. until all group members have fixed and made 1 error
 
@@ -84,7 +84,8 @@ data = [rt_new, trial_num, accuracy]
 # and remove it from all sublists in data 
 # be sure to only work with the master data list, to practice indexing 
 # lists of lists
-missing_rt = data[0].index(-1)
 
-for j in data:
-    del j[missing_rt]
+while -1 in data[0]:    
+    missing_rt = data[0].index(-1)
+    for j in data:
+        del j[missing_rt]
